@@ -1,0 +1,1 @@
+export let somar = (a, b) => a + b;
