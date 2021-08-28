@@ -8,6 +8,11 @@ document.addEventListener("click", () =>{
     let botao = document.querySelector('.btn');
     botao.style.color = 'white';
     botao.style.backgroundColor = 'black';
+    let lis = document.querySelectorAll('li');
+    for(const element of lis){
+        element.style.color = 'purple';
+        element.style.backgroundColor = 'black';
+    }
 })
 
 

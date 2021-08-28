@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 - Atributos</title>
+</head>
+<body>
+    <img src="./imagemAtributos" alt="Boné com logo" id="imagem">
+    <script>
+        // Selecionamos um elemento do html
+
+        let elemento = document.querySelector('#imagem');
+        // Consultar se existe um atributo source
+        alert(elemento.hasAttribute('src'));// true
+
+        // Pedir o valor do atributo
+        alert(elemento.getAttribute('src')); 
+
+        // Ecluir o valor do atributo
+        alert(elemento.removeAttribute("src", "./imagemAtributos")); // undefined
+
+        // Adicionar valor do atributo
+        alert(elemento.setAttribute('src', './imagemAtributos'));
+
+        
+
+    </script>
+</body>
+</html>

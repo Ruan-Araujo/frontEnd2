@@ -1,7 +1,7 @@
 export const listadeFelinos = [
     {
     title: 'O tigre',
-    imgUrl: '',
+    imgUrl: '../img/tigre.jpg',
     description: 'O Tigre (Panthera tigris) é uma das espécies da subfamília dos panterinos (família Felidae) pertencente ao gêneroPanthera. Só é encontrado no continente asiático; É um predador carnívoro e é a maior espécie de felino do mundo, junto com o leão, podendo ambos atingir um tamanho comparável ao dos maiores fósseis de felinos.',
     createdAt: '2021-06-01T23:12:11.837Z'
     },

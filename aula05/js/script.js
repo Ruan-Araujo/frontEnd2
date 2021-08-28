@@ -1,10 +1,10 @@
 function escreverHtml(titulo, texto){
-    const body = document.getElementById('body');
-    const meuTemplate = `
+    const body = document.getElementById('#body');
+    let meuTemplate = `
         <h1>${titulo}</h1>
         <p>${texto}</p>
     `;
-    body.innerHTML += meuTemplate;
+    document.body.innerHTML += meuTemplate;
 }
 
 escreverHtml('Olá', 'isso é uma exemplo de template string em HTML');
