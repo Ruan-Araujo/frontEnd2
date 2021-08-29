@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula07</title>
+</head>
+<body> 
+  <!--   Crie uma nova página HTML e adicione via JavaScript os seguintes elementos:
+    1. Crie um formulário
+    2. Selecione o formulário e salve-o numa variável com querySelector.
+    Itens a seguir serão inseridos dentro do formulário:
+    3. Um título com o texto: “Login”.
+    4. Um campo de input email com um placeholder: “Email”.
+    Um campo de input nome com um placeholder: "nome"
+    5. Um campo de input password com um placeholder: “Senha”.
+    6. Um botão submit com o texto “Enviar”.
+    7. Um botão reset com o texto “Cancelar”.
+    8. Insira a propriedade disabled no campo de Email.
+    9. Insira um estilo da sua escolha, a sugestão seria o display flex com flex-direction
+    column.
+    10. Remova o atributo placeholder do email. -->
+    <script>
+      const form = document.createElement('form');
+      document.body.appendChild(form)
+      let salvaForm = document.querySelector('form')
+
+      salvaForm.innerHTML += `<h1>Login</h1>`
+
+      const fazerInput = (tipo, placeholder, classe) => {
+        let input = document.createElement('input');
+        input.setAttribute("type", tipo);
+        input.setAttribute("placeholder", placeholder);
+        input.setAttribute('class', classe);
+        input.style.display = "block";
+        form.appendChild(input);
+      }
+
+      const fazerBotao = (tipo, texto)=> {
+        let botao = document.createElement('button');
+        botao.setAttribute('type', tipo);
+        botao.innerHTML += texto;
+        form.appendChild(botao);
+      }
+
+      let nome = fazerInput("text", "nome");
+      let email = fazerInput("email", "email", "email")
+      let password = fazerInput("password", "senha")
+
+      let enviar = fazerBotao('submit', 'Enviar');
+      let cancelar = fazerBotao('reset', 'Cancelar');
+
+      let salvaEmail = document.querySelector('.email');
+      salvaEmail.setAttribute('disabled', 'disabled');
+
+      salvaForm.style.display = "flex";
+      salvaForm.style.flexDirection = 'column'
+
+      salvaEmail.removeAttribute('placeholder', '');
+    </script>
+</body>
+</html>

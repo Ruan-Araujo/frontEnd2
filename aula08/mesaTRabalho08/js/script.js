@@ -21,12 +21,12 @@ form.setAttribute('action', 'post');
 document.body.appendChild(form);
 document.body.style.background = 'black';
 // Estilizando o formulario
-form.innerHTML = `<h1>Formulário</h1>`
+form.innerHTML = `<h1>Login</h1>`
 let h1 = document.querySelector('h1');
 h1.style.padding = '10px 0 0 2px'
 h1.style.textAlign = 'center'
 form.style.width = '300px';
-form.style.height = '320px';
+form.style.height = '350px';
 form.style.margin = '0 auto';
 form.style.borderRadius = '10px'
 form.style.background = 'magenta';
